@@ -1,0 +1,45 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.App.dark {
+  --color-background: #1f2023;
+  --color-foreground: #efefef;
+
+  --image-grayscale: 50%;
+  --image-opacity: 90%;
+
+  color: white;
+}
+
+.App:before {
+  content: "";
+  background: url("./../public/assets/bg-light.png") no-repeat center
+    center/cover;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .App:before {
+    background: url("./../public/assets/bg-dark.png") no-repeat center
+      center/cover;
+  }
+}
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
