@@ -1,0 +1,29 @@
+.currentWeatherSection {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainWeather {
+  display: flex;
+  flex-direction: column;
+}
+
+.rowSection {
+  display: flex;
+  flex-direction: row;
+}
+
+.rowSectionFull {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 700px) {
+  .rowSectionFull {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
