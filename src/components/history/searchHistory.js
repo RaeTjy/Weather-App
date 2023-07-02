@@ -6,15 +6,15 @@ import HistoryItem from "./historyItem"
 
 const useStyles = makeStyles((theme) => ({
   history: {
-    marginTop: 30,
-    padding: 30,
+    marginTop: 20,
+    padding: 20,
     display: "flex",
     flexGrow: 1,
     flexDirection: "column",
     borderRadius: "30px",
     backgroundColor: "rgba(254, 230, 255, 0.5)",
     zIndex: 3,
-    overflow: "hidden",
+    minHeight: 200,
   },
   historyList: {
     overflowY: "auto",

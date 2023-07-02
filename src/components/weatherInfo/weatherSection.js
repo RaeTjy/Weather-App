@@ -8,15 +8,15 @@ import SearchHistory from "../history/searchHistory"
 
 const useStyles = makeStyles((theme) => ({
   main: {
-    overflow: "hidden",
     display: "flex",
     flexGrow: 1,
     zIndex: 2,
+    maxHeight: "700px",
   },
   weatherBox: {
     position: "relative",
     marginTop: 50,
-    padding: 30,
+    padding: 20,
     display: "flex",
     flexGrow: 1,
     flexDirection: "column",

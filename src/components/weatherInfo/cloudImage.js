@@ -5,11 +5,11 @@ import { makeStyles } from "@mui/styles"
 const useStyles = makeStyles((theme) => ({
   floatingBox: {
     position: "absolute",
-    top: "-6vh",
+    top: "-50px",
     right: "10px",
   },
   image: {
-    maxHeight: "20vh",
+    maxHeight: "10rem",
   },
 }))
 
