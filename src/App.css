@@ -26,13 +26,6 @@
   left: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  .App:before {
-    background: url("./../public/assets/bg-dark.png") no-repeat center
-      center/cover;
-  }
-}
-
 /* .App-header {
   background-color: #282c34;
   min-height: 100vh;
