@@ -57,7 +57,8 @@ const parseWeatherData = (data) => {
 
   const countryName = getObjectByPath(data, "sys/country")
   const city = getObjectByPath(data, "name")
-  const cityName = city + COMMA + countryName
+  const textArray = [city, countryName]
+  const cityName = textArray.filter(Boolean).join(COMMA)
 
   let dateTime = ""
   const time = getObjectByPath(data, "dt")
